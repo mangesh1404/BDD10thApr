@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions
 (
 	
-	features="src/main/java/com/feature",
+	features="src/main/java/com/feature", 
 	glue= "com.stepDefs",
     format= {"pretty","html:test-output"},
 	monochrome= true,
