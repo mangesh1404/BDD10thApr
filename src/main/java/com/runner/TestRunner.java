@@ -12,8 +12,8 @@ import cucumber.api.junit.Cucumber;
 	features="src/main/java/com/feature", 
 	glue= "com.stepDefs",
     format= {"pretty","html:test-output"},
-	monochrome= true,
-	dryRun=false
+    tags= {"@excel"}
+	
 )
 public class TestRunner {
 

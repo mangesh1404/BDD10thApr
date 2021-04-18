@@ -1,3 +1,4 @@
+@login
 Feature: JBK Offline Application
 
 Scenario: Login test

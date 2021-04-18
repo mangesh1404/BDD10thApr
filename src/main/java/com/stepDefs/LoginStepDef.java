@@ -17,13 +17,14 @@ import cucumber.api.java.Before;//hooks
 public class LoginStepDef {
 	WebDriver driver;
 	LoginPage lp=null;
-	@Before
+	
+	@Before("@login")
 	public void setup() {
 		System.setProperty("webdriver.chrome.driver", "E:/chromedriver.exe");
 		driver= new ChromeDriver();
 		 lp= new LoginPage(driver);
 	}
-	@After
+	@After("@login")
 	public void tearDown() {
 		driver.close();
 	}

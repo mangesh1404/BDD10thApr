@@ -20,12 +20,12 @@ public class RegisterStepDef {
 	LoginPage lp=null;
 	RegisterPage rp =null;
 	
-	@Before
+	@Before("@register")
 	public void setup() {
 		System.setProperty("webdriver.chrome.driver", "E:/chromedriver.exe");
 		driver= new ChromeDriver();
 	}
-	@After
+	@After("@register")
 	public void tearDown() {
 		driver.close();
 	}
